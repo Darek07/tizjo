@@ -11,7 +11,8 @@ def my_printf(format_string,param):
                 print(param,end="")
                 shouldDo=False
             else:
-                print(format_string[idx],end="")
+                sw_cs = format_string[idx].swapcase()
+                print(sw_cs,end="")
         else:
             shouldDo=True
     print("")

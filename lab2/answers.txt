@@ -1,9 +1,9 @@
-totafsdfsf TEST fdsfsdf
+totafsdfsf TES fdsfsdf
 totafsdTEST2 fdsfsdf fdfjs
 jfldjfldk # wynik
-fjdfsfds # k alal
+fjdfsfds #.5 k alal
 djfjkldsjf TEST5 jjjjjj fsfjdljfdlsj flj ldfj
-gjjkdsljflds TEST6 jdlkfjdslf
+gjjkdsljflds #.-1k jdlkfjdslf
 fjdslkfjdl TEST7 tttttt
 fjdlsjfkl TEST8 oooolll
 rwrewrew TEST9 fjdslkjfdl

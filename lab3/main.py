@@ -12,15 +12,16 @@ def my_printf(format_string,param):
 
     sp = param.swapcase()
     r = match.group(0)
-    
-    first = match.group(1)
-    if first:
-        free_chars = int(first) - len(sp)
-        sp = " " * max(0, free_chars) + sp
 
     second = match.group(2)
     if second:
         sp = sp[:int(second[1:])]
+        
+        
+    first = match.group(1)
+    if first:
+        free_chars = int(first) - len(sp)
+        sp = " " * max(0, free_chars) + sp
 
     res = format_string.replace(r, sp)
     print(res)

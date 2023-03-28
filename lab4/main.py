@@ -4,11 +4,11 @@ import sys
 import re
 
 def reverse_num(param):
-    return str(abs(param))
+    return str(abs(int(param)))[::-1]
 
 
 def add_sign_if_appears(param):
-    return '-' + str(param) if param < 0 else str(param)
+    return '-' if int(param) < 0 else ''
 
 
 def my_printf(format_string, param):

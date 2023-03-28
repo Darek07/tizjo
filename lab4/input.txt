@@ -22,3 +22,5 @@ only zeros #g
 000
 negative zero #g
 -0
+# g
+15

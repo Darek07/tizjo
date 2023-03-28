@@ -1,3 +1,7 @@
 21
 reverse 31
 41 something
+-21
+reverse -31
+-41 something
+reversed 100 is 1

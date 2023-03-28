@@ -4,3 +4,11 @@ reverse #g
 13
 #g something
 14
+#g
+-12
+reverse #g
+-13
+#g something
+-14
+reversed 100 is #g
+100

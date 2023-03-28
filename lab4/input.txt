@@ -32,3 +32,5 @@ test negative digit #g
 -1
 test#g
 64
+#-g
+53

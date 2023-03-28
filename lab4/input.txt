@@ -24,3 +24,11 @@ negative zero #g
 -0
 # g
 15
+g#
+39
+test digit #g
+1
+test negative digit #g
+-1
+test#g
+64

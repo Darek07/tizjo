@@ -11,3 +11,7 @@ only zeros 0
 only zeros 0
 negative zero 0
 # g
+g#
+test digit 1
+test negative digit -1
+test46

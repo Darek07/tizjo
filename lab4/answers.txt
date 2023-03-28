@@ -5,3 +5,4 @@ reverse 31
 reverse -31
 -41 something
 reversed 100 is 1
+zeros 201 inside

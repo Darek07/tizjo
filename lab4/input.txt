@@ -20,3 +20,5 @@ only zeros #g
 0
 only zeros #g
 000
+negative zero #g
+-0

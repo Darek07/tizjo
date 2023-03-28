@@ -2,6 +2,10 @@
 
 import sys
 
+def reverse_num(param):
+    return str(abs(param))
+
+
 def my_printf(format_string,param):
     #print(format_string)
     shouldDo=True

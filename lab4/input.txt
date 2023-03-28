@@ -34,3 +34,9 @@ test#g
 64
 #-g
 53
+#gtest
+53
+word #g
+test
+nothing
+53

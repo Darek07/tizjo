@@ -16,3 +16,6 @@ test digit 1
 test negative digit -1
 test46
 #-g
+35test
+word test
+nothing

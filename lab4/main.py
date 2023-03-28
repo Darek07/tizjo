@@ -21,7 +21,10 @@ def my_printf(format_string, param):
         return
 
     replacement = match.group(0)
-    param = add_sign_if_appears(param) + reverse_num(param)
+    try:
+        param = add_sign_if_appears(param) + reverse_num(param)
+    except ValueError:
+        param = param
 
     print(format_string.replace(replacement, param))
 

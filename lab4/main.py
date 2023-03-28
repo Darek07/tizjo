@@ -5,7 +5,7 @@ import re
 
 def reverse_num(param):
     num = abs(int(param))
-    no_zeros = str(num).rstrip('0')
+    no_zeros = str(num).rstrip('0') if num != 0 else str(num)
     return no_zeros[::-1]
 
 

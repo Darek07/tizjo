@@ -7,3 +7,5 @@ reverse -31
 reversed 100 is 1
 zeros 201 inside
 zeros -101 inside
+only zeros 0
+only zeros 0

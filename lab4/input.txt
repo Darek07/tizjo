@@ -16,3 +16,7 @@ zeros #g inside
 102
 zeros #g inside
 -101
+only zeros #g
+0
+only zeros #g
+000

@@ -6,6 +6,10 @@ def reverse_num(param):
     return str(abs(param))
 
 
+def add_sign_if_appears(param):
+    return '-' + str(param) if param < 0 else str(param)
+
+
 def my_printf(format_string,param):
     #print(format_string)
     shouldDo=True

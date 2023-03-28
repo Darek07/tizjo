@@ -14,3 +14,5 @@ reversed 100 is #g
 100
 zeros #g inside
 102
+zeros #g inside
+-101

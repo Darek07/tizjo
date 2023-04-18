@@ -6,7 +6,7 @@ import re
 
 def add_start_zeros(param, num):
     str_param = str(abs(int(param)))
-    zeros_len = max(0, num - len(str_param))
+    zeros_len = max(0, num - len(str_param) - (1 if int(param) < 0 else 0))
     zeros = zeros_len * "0"
     return zeros + str_param
 

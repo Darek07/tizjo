@@ -5,14 +5,14 @@ import re
 
 
 def add_start_zeros(param, num):
-    str_param = str(abs(param))
+    str_param = str(abs(int(param)))
     zeros_len = max(0, num - len(str_param))
     zeros = zeros_len * "0"
     return zeros + str_param
 
 
 def convert(str_param):
-    formula = lambda x: (int(x) * 9 + 1) % 10
+    formula = lambda x: str((int(x) * 9 + 1) % 10)
     return ''.join([formula(digit) for digit in str_param])
 
 
@@ -24,7 +24,7 @@ def my_printf(format_string,param):
         return
 
     r = match.group(0)
-    num = match.group(1)
+    num = int(match.group(1))
     
     param = add_start_zeros(param, num)
     converted_param = convert(param)

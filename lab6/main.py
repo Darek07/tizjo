@@ -3,6 +3,12 @@
 import sys
 import re
 
+def add_start_zeros(param, num):
+    str_param = str(abs(param))
+    zeros_len = max(0, num - len(str_param))
+    zeros = zeros_len * "0"
+    return zeros + str_param
+
 def my_printf(format_string,param):
     match = re.search(r'#\.(\d+)g', format_string)
 

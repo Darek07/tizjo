@@ -9,6 +9,10 @@ def add_start_zeros(param, num):
     zeros = zeros_len * "0"
     return zeros + str_param
 
+def convert(str_param):
+    formula = lambda x: (int(x) * 9 + 1) % 10
+    return ''.join([formula(digit) for digit in str_param])
+
 def my_printf(format_string,param):
     match = re.search(r'#\.(\d+)g', format_string)
 

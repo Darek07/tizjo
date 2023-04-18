@@ -26,10 +26,11 @@ def my_printf(format_string,param):
     r = match.group(0)
     num = int(match.group(1))
     
-    param = add_start_zeros(param, num)
-    converted_param = convert(param)
+    zero_param = add_start_zeros(param, num)
+    converted_param = convert(zero_param)
+    sign_param = ('-' if int(param) < 0 else '') + converted_param
 
-    res = format_string.replace(r, converted_param)
+    res = format_string.replace(r, sign_param)
     print(res)
 
 data=sys.stdin.readlines()

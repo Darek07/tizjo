@@ -25,7 +25,7 @@ def my_printf(format_string,param):
     else:
         hex_param = str(hex(int(param)))[2:]
 
-    replaced = ''.join([replacements[c] if c in replacements else c for c in hex_param])
+    replaced = ''.join([replacements[c] if c in replacements else c for c in hex_param.lower()])
     
     res = format_string.replace(r, replaced)
     print(res)

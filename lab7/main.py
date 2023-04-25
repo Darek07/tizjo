@@ -20,6 +20,7 @@ def my_printf(format_string,param):
         return
 
     r = match.group(0)
+    
     if param.startswith('0x'):
         hex_param = str(param)[2:]
     else:

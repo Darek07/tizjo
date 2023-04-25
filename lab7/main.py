@@ -20,7 +20,7 @@ def my_printf(format_string,param):
         return
 
     r = match.group(0)
-    hex_param = str(hex(int(param)))
+    hex_param = str(hex(int(param)))[2:]
 
     replaced = ''.join([replacements[c] if c in replacements else c for c in hex_param])
     

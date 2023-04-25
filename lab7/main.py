@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 
 import sys
+import re
 
 def my_printf(format_string,param):
-    #print(format_string)
-    shouldDo=True
-    for idx in range(0,len(format_string)):
-        if shouldDo:
-            if format_string[idx] == '#' and format_string[idx+1] == 'k':
-                print(param,end="")
-                shouldDo=False
-            else:
-                print(format_string[idx],end="")
-        else:
-            shouldDo=True
-    print("")
+    match = re.search(r'#j', format_string)
+
+    if not match:
+        print(format_string)
+        return
+
+    r = match.group(0)
+    hex_param = hex(param)
+    
+    res = format_string.replace(r, hex_param)
+    print(res)
 
 data=sys.stdin.readlines()
 

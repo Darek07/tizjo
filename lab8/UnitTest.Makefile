@@ -69,6 +69,7 @@ endef
 	$(call perform_test,simple,Simple)
 	$(call perform_test,long,Long)
 	$(call perform_test,rand,"Random characters")
+	$(call perform_test,alpha,"Alpha hex")
 
 	$(call restore_data)
 
@@ -82,6 +83,7 @@ generate:
 	$(call generate_answers,simple)
 	$(call generate_answers,long)
 	$(call generate_answers,rand)
+	$(call generate_answers,alpha)
 
 	$(call restore_data)
 
@@ -94,3 +96,4 @@ merge:
 	$(call merge_test,simple)
 	$(call merge_test,long)
 	$(call merge_test,rand)
+	$(call merge_test,alpha)

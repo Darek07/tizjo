@@ -68,6 +68,7 @@ endef
 	$(call perform_test,startzeros,"Start zeros")
 	$(call perform_test,simple,Simple)
 	$(call perform_test,long,Long)
+	$(call perform_test,rand,"Random characters")
 
 	$(call restore_data)
 
@@ -80,6 +81,7 @@ generate:
 	$(call generate_answers,startzeros)
 	$(call generate_answers,simple)
 	$(call generate_answers,long)
+	$(call generate_answers,rand)
 
 	$(call restore_data)
 
@@ -91,3 +93,4 @@ merge:
 	$(call merge_test,startzeros)
 	$(call merge_test,simple)
 	$(call merge_test,long)
+	$(call merge_test,rand)

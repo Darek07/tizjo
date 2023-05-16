@@ -1,20 +1,35 @@
 #!/usr/bin/env python3
 
 import sys
+import re
+
+replacements = {
+    'a': 'g',
+    'b': 'h',
+    'c': 'i',
+    'd': 'j',
+    'e': 'k',
+    'f': 'l'
+}
 
 def my_printf(format_string,param):
-    #print(format_string)
-    shouldDo=True
-    for idx in range(0,len(format_string)):
-        if shouldDo:
-            if format_string[idx] == '#' and format_string[idx+1] == 'k':
-                print(param,end="")
-                shouldDo=False
-            else:
-                print(format_string[idx],end="")
-        else:
-            shouldDo=True
-    print("")
+    match = re.search(r'#j', format_string)
+
+    if not match:
+        print(format_string)
+        return
+
+    r = match.group(0)
+    
+    if param.startswith('0x'):
+        hex_param = str(param)[2:]
+    else:
+        hex_param = str(hex(int(param)))[2:]
+
+    replaced = ''.join([replacements[c] if c in replacements else c for c in hex_param.lower()])
+    
+    res = format_string.replace(r, replaced)
+    print(res)
 
 data=sys.stdin.readlines()
 

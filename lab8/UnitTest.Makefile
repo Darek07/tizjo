@@ -67,6 +67,7 @@ endef
 	$(call perform_test,nolength,"No input length")
 	$(call perform_test,startzeros,"Start zeros")
 	$(call perform_test,simple,Simple)
+	$(call perform_test,long,Long)
 
 	$(call restore_data)
 
@@ -78,6 +79,7 @@ generate:
 	$(call generate_answers,nolength)
 	$(call generate_answers,startzeros)
 	$(call generate_answers,simple)
+	$(call generate_answers,long)
 
 	$(call restore_data)
 
@@ -88,3 +90,4 @@ merge:
 	$(call merge_test,nolength)
 	$(call merge_test,startzeros)
 	$(call merge_test,simple)
+	$(call merge_test,long)

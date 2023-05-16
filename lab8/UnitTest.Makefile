@@ -65,6 +65,7 @@ endef
 	# perform_test,INPUT_FILE_NAME_WOUT_EXTENSION,TEST_NAME
 	
 	$(call perform_test,nolength,"No input length")
+	$(call perform_test,startzeros,"Start zeros")
 
 	$(call restore_data)
 
@@ -74,6 +75,7 @@ generate:
 	# generate_output,INPUT_FILE_NAME_WOUT_EXTENSION
 	
 	$(call generate_answers,nolength)
+	$(call generate_answers,startzeros)
 
 	$(call restore_data)
 
@@ -82,3 +84,4 @@ merge:
 	-rm ./answers.txt 2>/dev/null
 
 	$(call merge_test,nolength)
+	$(call merge_test,startzeros)

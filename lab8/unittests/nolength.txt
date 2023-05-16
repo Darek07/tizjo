@@ -1,6 +1,12 @@
 #.j
+1
 Text before #.j
+2
 #.j Text after
+3
 More dots #..j
+4
 Simple #j
+5
 #3j
+6

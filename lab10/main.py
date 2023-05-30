@@ -8,6 +8,9 @@ def convert_num(num):
     O = int(num)
     N = len(str(num))
     F = int((O * 2) / N)
+
+    if F % 2 != 0:
+        F = str(hex(F)).replace('0x', '')
     return F
 
 

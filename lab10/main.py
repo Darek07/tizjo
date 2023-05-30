@@ -11,7 +11,7 @@ def convert_num(num):
 
     if F % 2 != 0:
         F = str(hex(F)).replace('0x', '')
-    return F
+    return str(F)
 
 
 def my_printf(format_string,param):

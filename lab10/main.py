@@ -5,12 +5,14 @@ import re
 
 def convert_num(num):
     # F=int((O*2)/N)
-    O = int(num)
-    N = len(str(num))
+    O = abs(int(num))
+    N = len(str(O))
     F = int((O * 2) / N)
 
     if F % 2 != 0:
         F = str(hex(F)).replace('0x', '')
+    if int(num) < 0:
+        F = -int(F)
     return str(F)
 
 

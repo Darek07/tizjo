@@ -68,6 +68,7 @@ endef
 	$(call perform_test,bad,Bad)
 	$(call perform_test,odd,Odd)
 	$(call perform_test,negative_digit,"Negative digits")
+	$(call perform_test,negative_odd,"Negative odd")
 
 	$(call restore_data)
 
@@ -80,6 +81,7 @@ generate:
 	$(call generate_answers,bad)
 	$(call generate_answers,odd)
 	$(call generate_answers,negative_digit)
+	$(call generate_answers,negative_odd)
 
 	$(call restore_data)
 
@@ -91,3 +93,4 @@ merge:
 	$(call merge_test,bad)
 	$(call merge_test,odd)
 	$(call merge_test,negative_digit)
+	$(call merge_test,negative_odd)

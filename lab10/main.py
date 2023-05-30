@@ -12,7 +12,7 @@ def convert_num(num):
     if F % 2 != 0:
         F = str(hex(F)).replace('0x', '')
     if int(num) < 0:
-        F = -int(F)
+        F = '-' + str(F)
     return str(F)
 
 

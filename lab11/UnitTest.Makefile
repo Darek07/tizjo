@@ -66,6 +66,7 @@ endef
 	
 	$(call perform_test,digits,Digits)
 	$(call perform_test,bad,Bad)
+	$(call perform_test,complex,Complex)
 
 	$(call restore_data)
 
@@ -76,6 +77,7 @@ generate:
 	
 	$(call generate_answers,digits)
 	$(call generate_answers,bad)
+	$(call generate_answers,complex)
 
 	$(call restore_data)
 
@@ -85,3 +87,4 @@ merge:
 
 	$(call merge_test,digits)
 	$(call merge_test,bad)
+	$(call merge_test,complex)

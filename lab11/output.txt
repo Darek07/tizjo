@@ -1,3 +1,37 @@
+0
+a
+b0
+ba
+c00
+c0a
+cb0
+cba
+d000
+d00a
+# b
+#.b
+#-b
+#1b
+#.10b
+#2.2b
+#k
+#g
+#s
+#f
+#
+#12
+aad
+some b0etter test
+#ba
+################c00
+#####c0a###########
+text cb0 again
+abcdefghij cba
+ad000cdefghij
+abcdefghijd00a
+d0b0abcdefghij
+d0bab
+dc00.
 d0b0
 d0ba
 dc00
@@ -1012,3 +1046,12 @@ jihgfedc00
 jihgfedc0a
 jihgfedcb0
 jihgfedcba
+ajihgfedcb0
+jihgfedcbajihgfedcba
+edcbajihgfedcbajihgfedcba
+jihgfedcbajihgfedcbajihgfedcba
+ajihgfedcbajihgfedcbajihgfedcba
+bajihgfedcbajihgfedcbajihgfedcba
+cbajihgfedcbajihgfedcbajihgfedcb0
+cbajihgfedcba0000f0dcba0ih0fedcb0
+fedcbajihgfed0000i0gfed0ba0ihgfe0000
